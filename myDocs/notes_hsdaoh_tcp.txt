@@ -1,0 +1,55 @@
+devel@pi5-80:~ $ hsdaoh_tcp --help
+hsdaoh_tcp: invalid option -- '-'
+hsdaoh_tcp, a sample data server for hsdaoh
+
+Usage:	[-a listen address]
+	[-p listen port (default: 1234)]
+	[-b number of buffers (default: 15, set by library)]
+	[-n max number of linked list buffers to keep (default: 500)]
+	[-d device index (default: 0)]
+
+devel@pi5-80:~ $ hsdaoh_tcp -a 192.168.12.237 -p 4001 -n 1000
+unsupported descriptor subtype VS_COLORFORMAT
+unsupported descriptor subtype VS_COLORFORMAT
+listening...
+Use the device argument 'rtl_tcp=192.168.12.237:4001' in OsmoSDR (gr-osmosdr) source
+to receive samples in GRC and control rtl_tcp parameters (frequency, gain, ...).
+client accepted! pi5-90.lan 54116
+attempt to claim already-claimed interface 1
+Synchronized to HDMI input stream
+ll+, now 1
+ll+, now 2
+ll+, now 3
+ll+, now 4
+ll+, now 5
+ll+, now 6
+ll+, now 7
+ll+, now 8
+ll+, now 9
+ll+, now 10	
+		.
+		.
+		.		
+ll+, now 991
+ll+, now 992
+ll+, now 993
+ll+, now 994
+ll+, now 995
+ll+, now 996
+ll+, now 997
+ll+, now 998
+ll+, now 999
+ll+, now 1000
+ll+, now 1001
+ll+, now 1002
+gcc -v client.c -Dhsdaoh1  -o hsdaoh1
+hsdaoh was programmed with counter.uf2
+
+ 
+
+	
+devel@pi5-90:~ $ ./hsdaoh1  
+Socket created successfully
+Connected with server successfully
+
+^C
