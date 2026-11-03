@@ -2,29 +2,9 @@
 #include <string.h>
 #include <sys/socket.h>
 #include <arpa/inet.h>
-#ifdef rem1
+#ifdef hsdaoh1
  
-	#define ip "192.168.1.176"
-#endif
-#ifdef rem2
- 
-	#define ip "192.168.1.160"
-#endif
-#ifdef rem3
- 
-	#define ip "192.168.1.178"
-#endif
-#ifdef rem4
- 
-	#define ip "192.168.1.177"
-#endif
-#ifdef rem5
- 
-	#define ip "192.168.1.159"
-#endif
-#ifdef rem6
- 
-	#define ip "192.168.1.175"
+	#define ip "192.168.12.237"
 #endif
 
 
